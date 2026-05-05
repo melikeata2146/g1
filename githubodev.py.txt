@@ -1,0 +1,16 @@
+# Yuvarlama Fonksiyonları
+def round_up(n):
+    if n == int(n): return int(n)
+    return int(n) + 1 if n > 0 else int(n)
+
+def round_down(n):
+    return int(n) if n >= 0 else int(n) - 1
+
+# Veri Tipleri
+# int: Tam sayı (Örn: 5)
+# float: Ondalıklı sayı (Örn: 5.5)
+# str: Metin (Örn: "Selam")
+# bool: Mantıksal (Örn: True/False)
+
+print("3.2 yukarı:", round_up(3.2))
+print("3.8 aşağı:", round_down(3.8))
